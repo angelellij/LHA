@@ -1,0 +1,230 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Rofi Theme File
+ * Rofi Version: 1.7.3
+ **/
+
+/*****----- Configuration -----*****/
+configuration {
+	modi:                       "drun,run,filebrowser,window";
+    show-icons:                 false;
+    display-drun:               "APPS";
+    display-apps:               "APPS";
+    display-run:                "RUN";
+    display-filebrowser:        "FILES";
+    display-window:             "WINS";
+    display-sys:                "SYS";
+    display-wifi:               "WIFI";
+    display-comms:              "CMDS";
+	drun-display-format:        "{name}";
+	window-format:              "{w} · {c} · {t}";
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "Roboto Font 14";
+    white:                       #ffffff;
+    background:                  #202124;
+    background-alt:              #383b3f;
+    foreground:                  #90957D;
+    urgent:                      #707070;
+}
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       30%;
+    height:                      100%;
+    x-offset:                    -35%;
+    y-offset:                    0%;
+    padding:                     50px;
+    /* properties for all widgets */
+    enabled:                     true;
+    cursor:                      "default";
+    background-color:            @background;
+    border:                      0 4px 0 0;
+    border-color:                @foreground;
+    
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "mode-switcher", "inputbar", "listbox", "message" ];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "listview" ];
+    border: 0px;
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    border: 0px;
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     50px 0px 10px;
+    background-color:            transparent;
+    background-image:            url("~/.config/rofi/images/g.png", width);
+    text-color:                  @foreground;
+    orientation:                 horizontal;
+    children:                    [ "entry" ];
+}
+entry {
+    enabled:                     true;
+    expand:                      true;
+    padding:                     12px 16px;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+    border: 0 0 1px 0;
+}
+
+/*****----- Mode Switcher -----*****/
+mode-switcher{
+    enabled:                     true;
+    spacing:                     10px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+button {
+    font:                        "roboto bold 16";
+    padding:                     12px;
+    background-color:            none;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    border:                      1px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       5;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    border:0;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+    padding: 0;
+}
+
+
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     10px 0;
+    border-radius:               100%;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+    children:                    [ "selectable", "element-text" ];
+    expand: false;
+}
+
+text {
+    content  : "Anything";
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element normal.normal {
+    text-color:                  inherit;
+    children:                    [ "element-active" ];
+}
+element normal.urgent {
+    text-color:                  @foreground;
+}
+
+selectable{
+    background-color:            @foreground;
+    margin: -8px 8px;
+    width:10px;
+    enabled:                     true;
+    expand:                      false;
+}
+
+
+element selected.normal,
+element selected.urgent,
+element selected.active,
+element.alternate.normal,
+element.alternate.urgent,
+element.alternate.active {
+    text-color:                  @foreground;
+    background-color:            @transparent;
+    border-radius: 0;
+}
+
+element selected{
+    font: "uppercase";
+    border-radius:   0 15px 15px 0;
+    background-color:            @background-alt;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Message -----*****/
+message {
+    background-color:            transparent;
+    border: 0;
+}
+
+textbox {
+    padding:                     12px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    vertical-align:              0.5;
+    horizontal-align:            1;
+}
+error-message {
+    padding:                     15px;
+    border-radius:               0px;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+row{
+    background-color: transparent;
+}

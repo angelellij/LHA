@@ -18,8 +18,7 @@ apt install git
 #Install the DE
 su $USERNAME
 cd ~/ #Or cd to /home/$USERNAME
-sudo git clone https://github.com/angelellij/LHA
-sudo nano ./LHA/install.sh #If you want to toggle config
+git clone https://github.com/angelellij/LHA
 sudo chmod +x ./LHA/install.sh
 ./LHA/install.sh #No sudo!!!
 ```

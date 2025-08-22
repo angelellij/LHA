@@ -88,7 +88,6 @@ sudo apt-get install -y network-manager                #Network manager
 sudo apt-get install -y printer-driver-all -y -f       #Printer Utilities
 sudo apt-get install -y numlockx -f                    #Used to unlock numpad on start
 sudo apt-get install -y qalc -f                        #CLI calculator
-sudo apt-get install -y parcellite -f                  #Clipboard applet
 
 sudo apt-get install -y firefox-esr -f                 #Firefox browser
 sudo apt-get install -y libreoffice -f                 #Paquete office

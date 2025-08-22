@@ -26,20 +26,6 @@ sudo chmod +x ./LHA/install.sh
 
 ## **Post-install**
 
-Autologin
-
-```
-#Run on terminal
-sudo nano /etc/lightdm/lightdm.conf
-
-#Change lines below [Seat:*]
-autologin-user=<username>
-autologin-user-timeout=0
-
-#Restart lightdm
-sudo systemctl restart lightdm
-```
-
 Skip Grub
 
 ```
@@ -50,5 +36,5 @@ sudo nano /etc/default/grub
 GRUB_TIMEOUT=0
 
 #Update grub
-sudo update-gurb
+sudo update-grub
 ```

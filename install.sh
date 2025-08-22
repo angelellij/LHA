@@ -106,7 +106,6 @@ echo "-------------------------------"
 echo " Remove unnecesary.."
 echo "-------------------------------"
 
-sudo apt remove xfce4-notifyd/
 sudo apt remove kded5
 sudo apt autoremove
 
@@ -167,13 +166,13 @@ echo "-------------------------------"
 echo "         Add .desktop          "
 echo "-------------------------------"
 
-add_desktop_file "RofiWifi"
+# add_desktop_file "RofiWifi"
 
 echo "-------------------------------"
 echo " NoDisplay unnecesary .desktop "
 echo "-------------------------------"
 
-input_file="JDE/NoDisplay.txt" #.desktop files to not display on rofi menu
+input_file="LHA/NoDisplay.txt" #.desktop files to not display on rofi menu
 
 add_NoDisplay() {
     local desktop_file="$1"

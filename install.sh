@@ -4,25 +4,13 @@
 #----- CONFIG -----
 #------------------
 
-#Variables
-FIREFOX=""
-EPIPHANY="epiphany-browser"
-
-STEAM="steam"
-STEAMLIB="libc6-i386"
-
-GIMP="gimp"
-OBS="obs-studio"
-
 #Utilities
 
 get_install_deb() {
     local APP="$1"
     local URL="$2"
 
-    if [ "$APP" == false ]; then
-        echo "Skipping."
-    elif dpkg-query -W -f='${Status}' "$APP" 2>/dev/null | grep -q "installed"; then
+    if dpkg-query -W -f='${Status}' "$APP" 2>/dev/null | grep -q "installed"; then
         echo "$APP is already installed."
     else
         sudo wget -O ~/d.deb "$URL"
@@ -81,6 +69,7 @@ sudo apt-get install -y picom -f                       #Compositor
 sudo apt-get install -y policykit-1-gnome -f           #PolKit
 sudo apt-get install -y libnotify-bin -f               #Notifications daemon
 sudo apt-get install -y dunst -f                       #Notifications
+sudo apt-get install -y gdebi -f                       #Double clic install
 
 sudo apt-get install -y fonts-roboto -f                #Font
 sudo apt-get install -y feh -f                         #Background image

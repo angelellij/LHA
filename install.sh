@@ -36,12 +36,12 @@ update_config_files(){
         rm -r ~/.config/"${APP}"
     fi
     mkdir -p ~/.config/"${APP}"
-    cp -r ./JDE/"${APP}" ~/.config
+    cp -r ./LHA/"${APP}" ~/.config
 }
 
 add_desktop_file(){
     local APP="$1"
-    sudo cp -r ./JDE/"${APP}".desktop /usr/share/applications
+    sudo cp -r ./LHA/"${APP}".desktop /usr/share/applications
 }
 
 #-------------------------
@@ -207,7 +207,7 @@ echo "-------------------------------"
 
 systemctl enable NetworkManager.service
 
-sudo rm -r LHA
+#sudo rm -r LHA
 
 sudo systemctl start lightdm
 sudo systemctl restart lightdm

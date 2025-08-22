@@ -65,7 +65,7 @@ sudo apt-get install -y wmctrl -f                      #Utility for i3 script
 sudo apt-get install -y xdotool -f                     #Utility for i3 script
 
 sudo apt-get install -y polybar -f                     #Polybar
-sudo apt-get install -y picom -f                       #Compositor
+#sudo apt-get install -y picom -f                       #Compositor
 sudo apt-get install -y policykit-1-gnome -f           #PolKit
 sudo apt-get install -y libnotify-bin -f               #Notifications daemon
 sudo apt-get install -y dunst -f                       #Notifications

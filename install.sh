@@ -65,7 +65,6 @@ sudo apt-get install -y wmctrl -f                      #Utility for i3 script
 sudo apt-get install -y xdotool -f                     #Utility for i3 script
 
 sudo apt-get install -y polybar -f                     #Polybar
-#sudo apt-get install -y picom -f                       #Compositor
 sudo apt-get install -y policykit-1-gnome -f           #PolKit
 sudo apt-get install -y libnotify-bin -f               #Notifications daemon
 sudo apt-get install -y dunst -f                       #Notifications
@@ -86,7 +85,6 @@ sudo apt-get install -y pavucontrol -f                 #Audio GUI
 sudo apt-get install -y blueman -f                     #Bluetooth GUI
 sudo apt-get install -y xfce4-power-manager -f         #Power manager for laptops
 sudo apt-get install -y network-manager                #Network manager
-sudo apt-get install -y nmtui -f                       #Network manager GUI
 sudo apt-get install -y printer-driver-all -y -f       #Printer Utilities
 sudo apt-get install -y numlockx -f                    #Used to unlock numpad on start
 sudo apt-get install -y qalc -f                        #CLI calculator
@@ -211,7 +209,7 @@ echo "-------------------------------"
 
 systemctl enable NetworkManager.service
 
-sudo rm -r JDE
+sudo rm -r LHA
 
 sudo systemctl start lightdm
 sudo systemctl restart lightdm

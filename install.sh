@@ -96,6 +96,7 @@ sudo apt-get install -y firefox-esr -f                 #Firefox browser
 #sudo apt-get install -y libreoffice -f                 #Paquete office
 
 sudo apt-get install -y cmake -f                       #Utilities
+sudo apt-get install -y neovim -f                      # Console text editor
 
 
 echo "-------------------------------"

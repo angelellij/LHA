@@ -83,13 +83,14 @@ sudo apt-get install -y flameshot -f                   #Screenshot taker
 sudo apt-get install -y htop -f                        #Check resources stats   
 
 sudo apt-get install -y xbacklight -f                  #Brightess
-sudo apt-get install -y pavucontrol -f                 #Audio GUI
-sudo apt-get install -y blueman -f                     #Bluetooth GUI
+#sudo apt-get install -y pavucontrol -f                 #Audio GUI
+#sudo apt-get install -y blueman -f                     #Bluetooth GUI
 #sudo apt-get install -y xfce4-power-manager -f         #Power manager for laptops
 sudo apt-get install -y network-manager                #Network manager
 sudo apt-get install -y printer-driver-all -y -f       #Printer Utilities
 sudo apt-get install -y numlockx -f                    #Used to unlock numpad on start
 sudo apt-get install -y qalc -f                        #CLI calculator
+sudo apt-get install -y tigervnc-viewer -f             # VNC
 
 sudo apt-get install -y firefox-esr -f                 #Firefox browser
 #sudo apt-get install -y libreoffice -f                 #Paquete office

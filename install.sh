@@ -57,9 +57,11 @@ sudo apt-get update
 sudo apt-get upgrade
 
 sudo apt-get install -y wget                           # To install other apps
-sudo apt-get install -y lightdm -f                     #Login Screen
+#sudo apt-get install -y lightdm -f                     #Login Screen
+sudo apt-get install -y startx -f                      #Login Screen
+sudo apt-get install -y xorg -f                        #
 
-sudo apt-get install -y i3 -f                          #Window Manager
+#sudo apt-get install -y i3 -f                          #Window Manager
 sudo apt-get install -y jq -f                          #Utility for i3 script
 sudo apt-get install -y wmctrl -f                      #Utility for i3 script
 sudo apt-get install -y xdotool -f                     #Utility for i3 script
@@ -83,14 +85,14 @@ sudo apt-get install -y htop -f                        #Check resources stats
 sudo apt-get install -y xbacklight -f                  #Brightess
 sudo apt-get install -y pavucontrol -f                 #Audio GUI
 sudo apt-get install -y blueman -f                     #Bluetooth GUI
-sudo apt-get install -y xfce4-power-manager -f         #Power manager for laptops
+#sudo apt-get install -y xfce4-power-manager -f         #Power manager for laptops
 sudo apt-get install -y network-manager                #Network manager
 sudo apt-get install -y printer-driver-all -y -f       #Printer Utilities
 sudo apt-get install -y numlockx -f                    #Used to unlock numpad on start
 sudo apt-get install -y qalc -f                        #CLI calculator
 
 sudo apt-get install -y firefox-esr -f                 #Firefox browser
-sudo apt-get install -y libreoffice -f                 #Paquete office
+#sudo apt-get install -y libreoffice -f                 #Paquete office
 
 sudo apt-get install -y cmake -f                       #Utilities
 

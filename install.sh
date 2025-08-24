@@ -225,6 +225,8 @@ sudo systemctl daemon-reexec
 
 #Faster login
 sudo systemctl mask avahi-daemon
+sudo systemctl mask avahi-daemon.socket
+sudo systemctl mask cups
 sudo systemctl mask ModemManager
 sudo systemctl mask lm-service
 sudo systemctl mask apparmour

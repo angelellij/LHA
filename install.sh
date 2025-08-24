@@ -215,10 +215,10 @@ echo "-------------------------------"
 
 systemctl enable NetworkManager.service
 
-cp ~/LHA/.bash-profile ~/.bash-profile
+cp ~/LHA/.bash_profile ~/.bash-profile
 
 sudo mkdir -p /etc/systemd/system/getty@tt1.service.d
-sudo cp ~/LHA/.override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
+sudo cp ~/LHA/override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
 sudo systemctl daemon-reexec
 
 sudo systemctl mask avahi-daemon

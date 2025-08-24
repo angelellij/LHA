@@ -135,9 +135,9 @@ update_config_files "alacritty"      #Terminal
 update_config_files "polybar"        #Bar
 
 #Openbox
-sudo cp LHA/openbox/autostart /etc/xg/openbox/autostart
-sudo cp LHA/openbox/rc.xml /etc/xg/openbox/rc.xml
-sudo cp LHA/openbox/menu.xml /etc/xg/openbox/menu.xml
+sudo cp LHA/openbox/autostart /etc/xdg/openbox/autostart
+sudo cp LHA/openbox/rc.xml /etc/xdg/openbox/rc.xml
+sudo cp LHA/openbox/menu.xml /etc/xdg/openbox/menu.xml
 sudo cp LHA/openbox/themerc usr/share/themes/Clearlooks-Olive/openbox-3/themerc
 
 echo "-------------------------------"

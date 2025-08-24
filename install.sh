@@ -138,6 +138,7 @@ update_config_files "polybar"        #Bar
 sudo cp LHA/openbox/autostart /etc/xdg/openbox/autostart
 sudo cp LHA/openbox/rc.xml /etc/xdg/openbox/rc.xml
 sudo cp LHA/openbox/menu.xml /etc/xdg/openbox/menu.xml
+sudo cp LHA/openbox/bg.png /etc/xdg/openbox/bg.png
 sudo cp LHA/openbox/themerc usr/share/themes/Clearlooks-Olive/openbox-3/themerc
 
 echo "-------------------------------"

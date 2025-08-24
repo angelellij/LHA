@@ -131,11 +131,15 @@ echo "        DE Config files        "
 echo "-------------------------------"
 
 update_config_files "dunst"          #Notifications
-update_config_files "i3"             #Window Manager
 update_config_files "rofi"           #Apps menu
 update_config_files "alacritty"      #Terminal
 update_config_files "polybar"        #Bar
-update_config_files "gtk-3.0"        #Adwaita theme
+
+#Openbox
+sudo cp openbox/autostart /etc/xg/openbox/autostart
+sudo cp openbox/rc.xml /etc/xg/openbox/rc.xml
+sudo cp openbox/menu.xml /etc/xg/openbox/menu.xml
+sudo cp openbox/themerc usr/share/themes/Clearlooks-Olive/openbox-3/themerc
 
 echo "-------------------------------"
 echo " .sh files add exec permission "
@@ -163,7 +167,7 @@ add_exec_permission_to_sh() {
 }
 
 add_exec_permission_to_sh ".config/rofi"
-add_exec_permission_to_sh ".config/i3"
+
 
 echo "-------------------------------"
 echo "         Add .desktop          "
@@ -211,7 +215,14 @@ echo "-------------------------------"
 
 systemctl enable NetworkManager.service
 
+cp .bash-profile ~/.bash-profile
+
+sudo mkdir -p /etc/systemd/system/getty@tt1.service.d
+cp .override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
+sudo systemctl daemon-reexec
+
+sudo cp grub /etc/default/grub
+sudo update-grub
+
 #sudo rm -r LHA
 
-sudo systemctl start lightdm
-sudo systemctl restart lightdm

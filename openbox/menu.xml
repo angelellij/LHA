@@ -5,19 +5,25 @@
         xsi:schemaLocation="http://openbox.org/
                 file:///usr/share/openbox/menu.xsd">
 
-<menu id="root-menu" label="Openbox 3">
-  <item label="Terminal emulator">
-    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+<menu id="root-menu" label="Openbox 3">   
+  <item label="VNC">
+    <action name="Execute"><execute>vncviewer</execute></action>
   </item>
-  <item label="Web browser">
-    <action name="Execute"><execute>x-www-browser</execute></action>
+  <item label="Terminal">
+    <action name="Execute"><execute>alacritty</execute></action>
   </item>
-  <!-- This requires the presence of the 'obamenu' package to work -->
+  <item label="Firefox">
+    <action name="Execute"><execute>firefox</execute></action>
+  </item>
+  <item label="Archivos">
+    <action name="Execute"><execute>nemo</execute></action>
+  </item>
+ <!-- This requires the presence of the 'obamenu' package to work -->
   <menu id="/Debian" />
   <separator />
   <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
   <separator />
-  <item label="ObConf">
+  <item label="Openbox confif">
     <action name="Execute"><execute>obconf</execute></action>
   </item>
   <item label="Reconfigure">
@@ -27,8 +33,9 @@
     <action name="Restart" />
   </item>
   <separator />
-  <item label="Exit">
-    <action name="Exit" />
+  <item label="Apagar">
+    <action name="Execute"><execute>sudo systemctl poweroff</execute></action>
+
   </item>
 </menu>
 

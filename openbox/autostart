@@ -5,7 +5,7 @@
 #
 
 polybar &
-feh --bg-scale .config/i3/wallpaper.png & 
+feh --bg-scale .config/openbox/bg.png & 
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 /usr/bin/numlockx on &
 vncviewer

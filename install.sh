@@ -66,7 +66,7 @@ sudo apt-get install -y wmctrl -f                      #Utility for i3 script
 sudo apt-get install -y xdotool -f                     #Utility for i3 script
 
 sudo apt-get install -y polybar -f                     #Polybar
-sudo apt-get install -y policykit-1-gnome -f           #PolKit
+#sudo apt-get install -y policykit-1-gnome -f           #PolKit
 sudo apt-get install -y libnotify-bin -f               #Notifications daemon
 sudo apt-get install -y dunst -f                       #Notifications
 sudo apt-get install -y gdebi -f                       #Double clic install
@@ -215,20 +215,24 @@ echo "-------------------------------"
 
 systemctl enable NetworkManager.service
 
+#startx
 cp ~/LHA/.bash_profile ~/.bash-profile
-
+cp ~/LHA/.xinitrc .xinitrc
+chmod +x .xinitrc
 sudo mkdir -p /etc/systemd/system/getty@tt1.service.d
 sudo cp ~/LHA/override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
 sudo systemctl daemon-reexec
 
+#Faster login
 sudo systemctl mask avahi-daemon
 sudo systemctl mask ModemManager
 sudo systemctl mask lm-service
 sudo systemctl mask apparmour
 
+#grub
 sudo mkdir /etc/default
 sudo cp ~/LHA/grub /etc/default/grub
 sudo update-grub
 
-#sudo rm -r LHA
+sudo rm -r LHA
 

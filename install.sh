@@ -221,6 +221,11 @@ sudo mkdir -p /etc/systemd/system/getty@tt1.service.d
 cp .override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
 sudo systemctl daemon-reexec
 
+sudo systemctl mask avahi-daemon
+sudo systemctl mask ModemManager
+sudo systemctl mask lm-service
+sudo systemctl mask apparmour
+
 sudo cp grub /etc/default/grub
 sudo update-grub
 

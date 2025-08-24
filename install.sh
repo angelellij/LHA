@@ -136,10 +136,10 @@ update_config_files "alacritty"      #Terminal
 update_config_files "polybar"        #Bar
 
 #Openbox
-sudo cp openbox/autostart /etc/xg/openbox/autostart
-sudo cp openbox/rc.xml /etc/xg/openbox/rc.xml
-sudo cp openbox/menu.xml /etc/xg/openbox/menu.xml
-sudo cp openbox/themerc usr/share/themes/Clearlooks-Olive/openbox-3/themerc
+sudo cp LHA/openbox/autostart /etc/xg/openbox/autostart
+sudo cp LHA/openbox/rc.xml /etc/xg/openbox/rc.xml
+sudo cp LHA/openbox/menu.xml /etc/xg/openbox/menu.xml
+sudo cp LHA/openbox/themerc usr/share/themes/Clearlooks-Olive/openbox-3/themerc
 
 echo "-------------------------------"
 echo " .sh files add exec permission "
@@ -215,10 +215,10 @@ echo "-------------------------------"
 
 systemctl enable NetworkManager.service
 
-cp .bash-profile ~/.bash-profile
+cp ~/LHA/.bash-profile ~/.bash-profile
 
 sudo mkdir -p /etc/systemd/system/getty@tt1.service.d
-cp .override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
+sudo cp ~/LHA/.override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
 sudo systemctl daemon-reexec
 
 sudo systemctl mask avahi-daemon
@@ -226,7 +226,8 @@ sudo systemctl mask ModemManager
 sudo systemctl mask lm-service
 sudo systemctl mask apparmour
 
-sudo cp grub /etc/default/grub
+sudo mkdir /etc/default
+sudo cp ~/LHA/grub /etc/default/grub
 sudo update-grub
 
 #sudo rm -r LHA

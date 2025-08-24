@@ -56,12 +56,11 @@ echo "--------------------------------"
 sudo apt-get update
 sudo apt-get upgrade
 
-sudo apt-get install -y wget                           # To install other apps
-#sudo apt-get install -y lightdm -f                     #Login Screen
+sudo apt-get install -y wget                           #To install other apps
 sudo apt-get install -y startx -f                      #Login Screen
 sudo apt-get install -y xorg -f                        #
 
-#sudo apt-get install -y i3 -f                          #Window Manager
+sudo apt-get install -y openbox -f                     #Window Manager
 sudo apt-get install -y jq -f                          #Utility for i3 script
 sudo apt-get install -y wmctrl -f                      #Utility for i3 script
 sudo apt-get install -y xdotool -f                     #Utility for i3 script

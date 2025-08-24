@@ -25,7 +25,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Roboto Font 14";
+    font:                        "Roboto Font 12";
     white:                       #ffffff;
     selected:                    #ffffff11;
     background:                  #202124;
@@ -46,7 +46,7 @@ window {
     height:                      100%;
     x-offset:                    -35%;
     y-offset:                    0%;
-    padding:                     50px;
+    padding:                     10px;
     /* properties for all widgets */
     enabled:                     true;
     cursor:                      "default";
@@ -67,7 +67,7 @@ mainbox {
 
 listbox {
     spacing:                     20px;
-    padding:                     20px;
+    padding:                     10px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "listview" ];
@@ -79,7 +79,7 @@ inputbar {
     border: 0px;
     enabled:                     true;
     spacing:                     10px;
-    padding:                     50px 0px 10px;
+    padding:                     30px 0px 10px;
     background-color:            transparent;
     background-image:            url("~/.config/rofi/images/g.png", width);
     text-color:                  @foreground;
@@ -101,12 +101,13 @@ entry {
 mode-switcher{
     enabled:                     true;
     spacing:                     10px;
+    padding:                     30px 0 0 0;
     background-color:            transparent;
     text-color:                  @foreground;
 }
 
 button {
-    font:                        "roboto bold 16";
+    font:                        "roboto bold 14";
     padding:                     12px;
     background-color:            none;
     text-color:                  inherit;

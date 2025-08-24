@@ -1,0 +1,11 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+polybar &
+feh --bg-scale .config/i3/wallpaper.png & 
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+/usr/bin/numlockx on &
+vncviewer

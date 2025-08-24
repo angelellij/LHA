@@ -219,8 +219,8 @@ systemctl enable NetworkManager.service
 cp ~/LHA/.bash_profile ~/.bash_profile
 cp ~/LHA/.xinitrc .xinitrc
 chmod +x .xinitrc
-sudo mkdir -p /etc/systemd/system/getty@tt1.service.d
-sudo cp ~/LHA/override.conf /etc/systemd/system/getty@tt1.service.d/override.conf
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+sudo cp ~/LHA/override.conf /etc/systemd/system/getty@tty1.service.d/override.conf
 sudo systemctl daemon-reexec
 
 #Faster login

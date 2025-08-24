@@ -227,9 +227,15 @@ sudo systemctl daemon-reexec
 sudo systemctl mask avahi-daemon
 sudo systemctl mask avahi-daemon.socket
 sudo systemctl mask cups
+sudo systemctl mask cups.socket
+sudo systemctl mask cups.path
+sudo systemctl mask espeakup
+sudo systemctl mask wpa_supplicant
+sudo systemctl mask networking
+sudo systemctl mask systemd-journal-flush
 sudo systemctl mask ModemManager
-sudo systemctl mask lm-service
-sudo systemctl mask apparmour
+sudo systemctl mask lm-sensors
+sudo systemctl mask apparmor
 
 #grub
 sudo mkdir /etc/default

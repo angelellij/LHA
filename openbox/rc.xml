@@ -179,52 +179,24 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Right">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="GoToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="S-A-Left">
+    <keybind key="W-S-1">
       <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
+        <to>1</to>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="W-S-2">
       <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
+        <to>2</to>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
+    <keybind key="W-S-3">
       <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
+        <to>3</to>
       </action>
     </keybind>
-    <keybind key="S-A-Down">
+    <keybind key="W-S-4">
       <action name="SendToDesktop">
-        <to>down</to>
-        <wrap>no</wrap>
+        <to>4</to>
       </action>
     </keybind>
     <keybind key="W-1">
@@ -254,12 +226,12 @@
     <keybind key="W-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-Escape">
+    <keybind key="W-Tab">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="A-space">
+    <keybind key="W-m">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
@@ -280,17 +252,34 @@
         <command>sudo reboot</command>
       </action>
     </keybind>
-    <keybind key="W-Enter">
+    <keybind key="W-Return">
       <action name="Execute">
-        <command>alacritty</command>
+	      <command>alacritty</command>
       </action>
     </keybind>
     <keybind key="W-Space">
       <action name="Execute">
-	      <command>"rofi -modi 'drun,window,comms: .config/rofi/comms.sh' -show drun"</command>
+		<command>"rofi -modi 'drun,window,comms: .config/rofi/comms.sh' -show drun"</command>
+      </action>
+    </keybind>
+    <keybind key="W-z">
+      <action name="Execute">
+	      <command>nemo</command>
+      </action>
+    </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+	      <command>firefox</command>
+      </action>
+    </keybind>
+    <keybind key="W-v">
+      <action name="Execute">
+	      <command>vncviewer</command>
       </action>
     </keybind>
  
+ 
+
 
 
 

@@ -4,20 +4,20 @@
 
 # Menu settings
 menu.title.bg: Raised Gradient Vertical
-menu.title.bg.color: #95ad70
-menu.title.bg.colorTo: #7d925d
+menu.title.bg.color: #ffffff
+menu.title.bg.colorTo: #90957D
 menu.title.text.color: #ffffff
 menu.title.text.justify: Left
 
 menu.items.bg: Flat Solid
-menu.items.bg.color: #f1eee0
-menu.items.text.color: #444444
+menu.items.bg.color: #202124
+menu.items.text.color: #ffffff
 menu.items.disabled.text.color: #aaaaaa
 menu.items.active.disabled.text.color: #969696
 
 menu.items.active.bg: Flat Gradient Vertical Border
 menu.items.active.bg.color: #b4c994
-menu.items.active.bg.colorTo: #92aa6d
+menu.items.active.bg.colorTo: #90957D
 menu.items.active.bg.border.color: #92aa6d
 menu.items.active.text.color: #ffffff
 
@@ -25,18 +25,18 @@ menu.items.active.text.color: #ffffff
 # Window settings (focused)
 window.active.title.bg: Raised Gradient Vertical
 window.active.title.bg.color: #95ad70
-window.active.title.bg.colorTo: #7d925d
+window.active.title.bg.colorTo: #95ad70
 
 window.active.label.bg: Parentrelative
 window.active.label.text.color: #ffffff
 
 window.active.handle.bg: Raised Gradient Vertical
 window.active.handle.bg.color: #95ad70
-window.active.handle.bg.colorTo: #7d925d
+window.active.handle.bg.colorTo: #95ad70
 
 window.active.grip.bg: Raised Gradient Vertical
 window.active.grip.bg.color: #95ad70
-window.active.grip.bg.colorTo: #7d925d
+window.active.grip.bg.colorTo: #95ad70
 
 window.active.button.unpressed.bg: Flat Gradient Vertical Border
 window.active.button.unpressed.bg.color: #65744e

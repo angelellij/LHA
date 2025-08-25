@@ -242,14 +242,14 @@
         <command>scrot -s</command>
       </action>
     </keybind>
-    <keybind key="W-S-q">
+    <keybind key="W-C-q">
       <action name="Execute">
-        <command>sudo poweroff</command>
+        <command>systemctl poweroff</command>
       </action>
     </keybind>
-    <keybind key="W-S-r">
+    <keybind key="W-C-r">
       <action name="Execute">
-        <command>sudo reboot</command>
+        <command>systemctl reboot</command>
       </action>
     </keybind>
     <keybind key="W-Return">
